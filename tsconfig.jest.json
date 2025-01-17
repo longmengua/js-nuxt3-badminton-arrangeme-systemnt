@@ -1,0 +1,15 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext", // Ensures the latest JS features are available
+    "module": "ESNext", // For ESM
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from CommonJS
+    "verbatimModuleSyntax": false, // Fixes import/export errors
+    "types": ["jest", "node"] // Ensure Jest and Node types are available
+  },
+  "include": [
+    "composables/**/*.ts", // Your source files
+    "tests/**/*.ts" // Jest test files
+  ]
+}
