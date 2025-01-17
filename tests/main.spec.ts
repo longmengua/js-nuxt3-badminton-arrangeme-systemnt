@@ -1,5 +1,5 @@
 import { describe, it, expect } from '@jest/globals';
-import { Player, getPlayersForMatch } from '~/server/utils/arrangement';
+import { Player, getPlayersForMatch } from '@/server/utils/arrangement';
 
 describe('Player Matchmaking Tests', () => {
   let players: Player[];

@@ -12,6 +12,9 @@ const config: Config.InitialOptions = {
   },
   moduleFileExtensions: ['ts', 'js', 'vue', 'json'],
   testMatch: ["**/*.spec.(js|ts)"], // 支援 JS 和 TS 檔案
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/$1", // Adjust <rootDir> if your files are not under src
+  },
 }
 
 // 使用 CommonJS 語法導出設定
