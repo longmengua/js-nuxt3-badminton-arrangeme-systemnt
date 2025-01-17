@@ -1,8 +1,6 @@
+<script setup lang="ts">
+import Dashbaord from '~/pages/dashboard.vue';
+</script>
 <template>
-  <div>
-    <h1>Welcome to the homepage</h1>
-    <AppAlert>
-      This is an auto-imported component
-    </AppAlert>
-  </div>
+  <Dashbaord />
 </template>
